@@ -48,7 +48,7 @@ embedding，example age，gender等，将所有的这些特征concat起来，送
 - 答：减少高度活跃用户对于loss的过度影响
 
 5、YouTube为什么不采取类似RNN的Sequence model，而是完全摒弃了用户观看历史的时序特征，把用户最近的浏览历史等同看待，这不会损失有效信息吗？
-答：开放性问题。这个原因应该是YouTube工程师的“经验之谈”，如果过多考虑时序的影响，用户的推荐结果将过多受最近观看或搜索的一个视频的影响。YouTube给出一个例子，如果用户刚搜索过“tayer swift”，你就把用户主页的推荐结果大部分变成tayer swift有关的视频，这其实是非常差的体验。为了综合考虑之前多次搜索和观看的信息，YouTube丢掉了时序信息，讲用户近期的历史纪录等同看待。
+- 答：开放性问题。这个原因应该是YouTube工程师的“经验之谈”，如果过多考虑时序的影响，用户的推荐结果将过多受最近观看或搜索的一个视频的影响。YouTube给出一个例子，如果用户刚搜索过“tayer swift”，你就把用户主页的推荐结果大部分变成tayer swift有关的视频，这其实是非常差的体验。为了综合考虑之前多次搜索和观看的信息，YouTube丢掉了时序信息，讲用户近期的历史纪录等同看待。
 但RNN到底适不适合next watch这一场景，其实还有待商榷，@严林 大神在上篇文章的评论中已经提到，youtube已经上线了以RNN为基础的推荐模型， 参考论文如下： https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46488.pdf
 看来时隔两年，YouTube对于时序信息以及RNN模型有了更多的掌握和利用
 
@@ -82,4 +82,9 @@ embedding，example age，gender等，将所有的这些特征concat起来，送
 github上可以找到一些tensorflow的实现，但基本没有可以运行的，官方好像没有开源。
 - 可参考[QingqingSUN/YoutubeNet](https://github.com/QingqingSUN/YoutubeNet)
 
-
+## 6.Ref
+- [重读Youtube深度学习推荐系统论文](https://zhuanlan.zhihu.com/p/52169807)
+- [YouTube深度学习推荐系统的十大工程问题](https://zhuanl)2504407)
+- Covington, P., J. Adams and E. Sargin (2016). Deep neural networks for youtube recommendations
+- [揭开YouTube深度推荐系统模型Serving之谜](https://zhuanlan.zhihu.com/p/61827629)
+- [Deep Neural Network for YouTube Recommendation论文精读](https://zhuanlan.zhihu.com/p/25343518)
