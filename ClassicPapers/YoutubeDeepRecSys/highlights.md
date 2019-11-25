@@ -22,8 +22,9 @@ embedding，example age，gender等，将所有的这些特征concat起来，送
 - training时使用的是我们熟悉的softmax分类，为什么online serving的时候不这样做而要使用nearest neighbor search 的方法？详见Q&A部分
 
 3.2 ranking model
+
   整理架构与candidate generation model比较相似，主要差别在于特征工程,引入另一套DNN作为ranking model的目的就是引入更多描述视频、用户以及二者之间关系的特征，达到对候选视频集合准确排序之目的：
-"During ranking, we have access to many more features describing the video and the user’s relationship to the video because only a few hundred videos are being scored rather than the millions scored in candidate generation. Ranking is also crucial for ensembling different candidate sources whose scores are not directly comparable."
+- "During ranking, we have access to many more features describing the video and the user’s relationship to the video because only a few hundred videos are being scored rather than the millions scored in candidate generation. Ranking is also crucial for ensembling different candidate sources whose scores are not directly comparable."
 
 
 
