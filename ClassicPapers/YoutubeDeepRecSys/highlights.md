@@ -66,13 +66,13 @@ embedding，example age，gender等，将所有的这些特征concat起来，送
 -（1）低频特征可能去掉比embedding更好效果更好，和您说的一样，出现次数太少emb学不好。实际可以用HashBucket去映射，对于大规模稀疏ID类特征，实际使用上用Hash不会对结果产生太大影响，反而在增量更新的情况上可能会比置为0更好
 -（2）可以将长尾都设为UNK，再对UNK训练一组embedding。不过跟同设成0是否有区别还不好说
 
-9、针对某些特征，比如#previous impressions，为什么要进行开方和平方处理后，当作三个特征输入模型？
+10、针对某些特征，比如#previous impressions，为什么要进行开方和平方处理后，当作三个特征输入模型？
 - 答：这是很简单有效的工程经验，引入了特征的非线性。从YouTube这篇文章的效果反馈来看，提升了其模型的离线准确度
 
-10、为什么ranking model不采用经典的logistic regression当作输出层，而是采用了weighted logistic regression？
+11、为什么ranking model不采用经典的logistic regression当作输出层，而是采用了weighted logistic regression？
 - 答：因为在第7问中，我们已经知道模型采用了expected watch time per impression作为优化目标，所以如果简单使用LR就无法引入正样本的watch time信息。因此采用weighted LR，将watch time作为正样本的weight，在线上serving中使用exp(Wx+b)做预测可以直接得到expected watch time的近似，完美
 
-11、接10问，为什么serving部分的exp(Wx+b)可以表示expected watch time？
+12、接10问，为什么serving部分的exp(Wx+b)可以表示expected watch time？
 - 答：serving部分计算exp(Wx+b)，对应一个事件的odds（=p/(1-p), 可由LR推导出来）, 而Weighted LR使用用户观看时长作为权重，使得对应的Odds表示的就是用户观看时长的期望。简要推导如下：
 <div align=center>
 <img width="500" src="../../img/serving.png">
