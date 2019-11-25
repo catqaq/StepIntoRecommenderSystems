@@ -84,7 +84,7 @@ github上可以找到一些tensorflow的实现，但基本没有可以运行的�
 
 ## 6.Ref
 - [重读Youtube深度学习推荐系统论文](https://zhuanlan.zhihu.com/p/52169807)
-- [YouTube深度学习推荐系统的十大工程问题](https://zhuanl)2504407)
+- [YouTube深度学习推荐系统的十大工程问题](https://zhuanlan.zhihu.com/p/52504407)
 - Covington, P., J. Adams and E. Sargin (2016). Deep neural networks for youtube recommendations
 - [揭开YouTube深度推荐系统模型Serving之谜](https://zhuanlan.zhihu.com/p/61827629)
 - [Deep Neural Network for YouTube Recommendation论文精读](https://zhuanlan.zhihu.com/p/25343518)
