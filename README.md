@@ -8,11 +8,18 @@
 ## 2.DeepRecommendSystem
 ## 目录
 * [简介]()
-* [1. 深度推荐系统经典论文](ClassicPapers/Introduction.md)
-* 2\. 预备知识
-   * [2.1 环境配置](chapter02_prerequisite/2.1_install.md)
-   * [2.2 数据操作](chapter02_prerequisite/2.2_tensor.md)
-   * [2.3 自动求梯度](chapter02_prerequisite/2.3_autograd.md)
+* [1. 深度推荐系统经典论文集](ClassicPapers/Introduction.md)
+* 2\. 深度推荐系统(按深度学习技术分类)
+   * [2.1 Multilayer Perceptron Based Recommendation](DeepRecSys/2.1_MLP_RecSys.md)
+   * [2.2 Autoencoder Based Recommendation](DeepRecSys/2.2_AE_RecSys.md)
+   * [2.3 CNN Based Recommendation](DeepRecSys/2.3_CNN_RecSys.md)
+   * [2.4 RNN Based Recommendation](DeepRecSys/2.4_RNN_RecSys.md)
+   * [2.5 Restricted Boltzmann Machine Based Recommendation](DeepRecSys/2.5_RBM_RecSys.md)
+   * [2.6 Neural Attention Based Recommendation](DeepRecSys/2.6_Attention_RecSys.md)
+   * [2.7 Neural AutoRegressive Based Recommendation](DeepRecSys/2.7_AutoReg_RecSys.md)
+   * [2.8 Deep Reinforcement Learning for Recommendation](DeepRecSys/2.8_RL_RecSys.md)
+   * [2.9 GAN Based Recommendation](DeepRecSys/2.9_GAN_RecSys.md)
+   * [2.10 Deep Hybrid Models for Recommendation](DeepRecSys/2.9_Hybrid_RecSys.md)
 
 
 持续更新中......
