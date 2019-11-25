@@ -9,7 +9,7 @@
 ## 目录
 * [简介]()
 * [1\. 深度推荐系统经典论文集](ClassicPapers/Introduction.md)
-  * [1.1 Youtube深度学习推荐系统论文](YoutubeDeepRecSys/highlights.md)
+  * [1.1 Youtube深度学习推荐系统论文](ClassicPapers/YoutubeDeepRecSys/highlights.md)
 * 2\. 深度推荐系统(按深度学习技术分类)
    * [2.1 Multilayer Perceptron Based Recommendation](DeepRecSys/2.1_MLP_RecSys.md)
    * [2.2 Autoencoder Based Recommendation](DeepRecSys/2.2_AE_RecSys.md)
